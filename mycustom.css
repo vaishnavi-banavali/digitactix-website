@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Logo sizing */
+.navbar-brand img {
+    height: 50px;
+}
+
+/* Nav links styling */
+.navbar-nav .nav-link {
+    color: #333;
+    margin: 0 10px;
+    position: relative;
+}
+
+/* Highlight active page */
+.navbar-nav .nav-link.active {
+    color: #f2b71b;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f2b71b;
+}
+
+/* Dropdown toggle indicator spacing */
+.dropdown-toggle::after {
+    margin-left: 5px;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    min-width: 180px;
+    font-size: 0.95rem;
+}
+
+/* Language selector adjustments */
+.navbar-nav .dropdown img {
+    height: 16px;
+}
+
+/* Search icon styling */
+.navbar-nav .bi-search {
+    font-size: 1.1rem;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover .bi-search {
+    color: #000;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer h6 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer ul li {
+    margin-bottom: 6px;
+}
+
+.footer .bi {
+    font-size: 1.2rem;
+}
+
+.footer-1 {
+    background-color: #212121;
+    color: #fff;
+    padding-top: 50px;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer-2 {
+    float: left;
+    width: 100%;
+    background-color: #161616;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+@media (min-width: 767px) {
+    .quick-link-2, .quick-link-3 {
+        border-left: 1px solid grey;
+        padding-left: 20px;
+    }
+}
