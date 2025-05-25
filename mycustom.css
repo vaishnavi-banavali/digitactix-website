@@ -4,12 +4,10 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
     color: #f2b71b;
-    margin-bottom: 30px;
     font-weight: 400;
     padding: 0 10px;
-    margin-top: 20px;
 }
 
 h3 {
@@ -224,13 +222,13 @@ p {
 }
 
 .counter-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #fff;
 }
 
 .counter-label {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     margin-top: 10px;
 }
@@ -239,13 +237,12 @@ p {
     float: left;
     width: 100%;
     background-color: #f9a22b;
-    margin: 30px 0;
+    margin: 0px 0;
     margin-top: 30px;
     margin-top: 50px;
     text-align: center;
     padding: 70px 20px;
     padding-top: 20px;
-    margin-bottom: 30px;
     line-height: 0;
 }
 
@@ -324,7 +321,7 @@ img {
 }
 
 .contact {
-    padding: 60px 20px;
+    padding: 20px 20px 60px 20px;
     background-color: #fff;
 }
 
@@ -387,7 +384,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
-    margin-top: 50px;
 }
 
 button#more1 {
@@ -414,8 +410,8 @@ button#more1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Mobile default */
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
     justify-items: center;
     text-align: center;
 }
@@ -469,7 +465,7 @@ button#more1 {
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    padding: 0 15px;
+    padding: 0 0px;
 }
 
 .owl-nav button.owl-prev,
@@ -517,7 +513,7 @@ button#more1 {
 }
 
 .clients {
-    padding: 40px 20px;
+    padding: 0px 20px;
     text-align: center;
     background: #fff;
 }
@@ -565,9 +561,12 @@ button#more1 {
     transition: box-shadow 0.3s ease;
 }
 
-.logo-grid li:hover,
+.logo-grid li:hover {
+    box-shadow: 0 0 10px #666;
+}
+
 .client-grid li:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #ffc107;
 }
 
 .logo-grid img {
@@ -607,6 +606,24 @@ button#more1 {
 
 @media (min-width: 767px) {
 
+    h2 {
+        font-size: 35px;
+    }
+
+    .icon-grid {
+        gap: 20px;
+        padding: 20px;
+    }
+
+
+    .counter-number {
+        font-size: 2.5rem;
+    }
+
+    .counter-label {
+        font-size: 1rem;
+    }
+
     .icon-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -643,6 +660,19 @@ button#more1 {
 
     .contact-wrapper {
         flex-direction: row;
+    }
+
+    .contact-right li {
+        font-size: 1.5rem;
+    }
+
+    .owl-nav {
+        padding: 0 15px;
+    }
+
+    .responsive-container {
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
 }
