@@ -13,6 +13,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Roboto font family -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- jQuery (Required for Owl Carousel) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
   <!-- Custom css file -->
   <link href="./mycustom.css" rel="stylesheet">
 
@@ -21,7 +33,7 @@
 
 <body>
   <!-- Nav bar -->
-  <nav class="navbar navbar-expand-lg border-bottom px-5">
+  <nav class="navbar navbar-expand-lg border-bottom md:px-5">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="./assets/digitactix.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -90,7 +102,491 @@
     </div>
   </nav>
 
-  <h1>Hello, world!</h1>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/banner-1.jpg" class="d-block w-100" alt="banner-1">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner-2.jpg" class="d-block w-100" alt="banner-2">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner-3.jpg" class="d-block w-100" alt="banner-3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="custom-arrow" aria-hidden="true">&#x2039;</span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="custom-arrow" aria-hidden="true">&#x203A;</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container counter-section">
+    <div class="row text-center">
+      <div class="col-6 col-lg-3 mb-4">
+        <div class="counter-number" data-target="15000">0+</div>
+        <div class="counter-label">Average monthly organic <br>social media engagements for clients</div>
+      </div>
+      <div class="col-6 col-lg-3 mb-4">
+        <div class="counter-number" data-target="7000">0+</div>
+        <div class="counter-label">Keywords achieving <br>first-page rankings on Google</div>
+      </div>
+      <div class="col-6 col-lg-3 mb-4">
+        <div class="counter-number" data-target="30000">0+</div>
+        <div class="counter-label">Total monthly website traffic <br>generated for clients</div>
+      </div>
+      <div class="col-6 col-lg-3 mb-4">
+        <div class="counter-number" data-target="50000">0+</div>
+        <div class="counter-label">Total monthly client <br>revenue collected in INR</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="responsive-container">
+    <div class="content-column">
+      <h2>Best Digital Marketing Agency in Mumbai</h2>
+      <p>
+        <strong>Digitactix</strong> is a renowned <strong>digital marketing company in Mumbai</strong>, founded to meet
+        the growing demand for building <strong>brand presence</strong> on the web. With the surge in internet and
+        <strong>social media users</strong> since 2010 and the rapid evolution of <strong>digital trends</strong>, we
+        have
+        consistently adapted by bringing skilled <strong>SEO experts</strong>, <strong>social media marketers</strong>,
+        and digital professionals on board. As a leading <strong>digital marketing agency in Mumbai</strong>, we’ve
+        successfully delivered results across industries like sports, fashion, furniture, and manufacturing for over 9
+        years. Businesses often face challenges like keeping up with fast-changing <strong>digital marketing
+          trends</strong> (<strong>voice search</strong>, <strong>video marketing</strong>, <strong>authentic
+          content</strong>), poor branding, ineffective <strong>brand communication</strong>, and the struggle to
+        generate
+        <strong>qualified leads</strong> that convert into real sales.
+      </p>
+
+      <div id="moreContent" style="display: none;">
+        <p>
+          At <strong>Digitactix</strong>, we solve these challenges by leveraging services like <strong>SEO</strong>,
+          <strong>email marketing</strong>, <strong>content writing</strong>, advertising, and <strong>social media
+            optimization</strong> to drive meaningful engagement and improve conversions. We specialize in developing
+          brands from scratch through strategic <strong>graphic designing</strong>, <strong>web development</strong>,
+          and
+          <strong>UI/UX design</strong>, ensuring consistency in branding and strong <strong>digital
+            visibility</strong>.
+          Our approach focuses not just on reaching the audience but resonating with them through targeted <strong>brand
+            communication</strong>. As one of the top <strong>internet marketing companies in India</strong>, we are
+          committed to helping brands be heard, stay relevant, and thrive in a competitive online marketplace.
+        </p>
+      </div>
+
+      <button id="toggleBtn" onclick="toggleContent()">Read More</button>
+    </div>
+
+    <div class="form-column">
+      <h3>Get Free Audit!</h3>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Mobile" required />
+        <button type="submit">I WANT FREE AUDIT</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container services">
+    <h2><span><img src="https://digitactix.com/wp-content/uploads/2019/05/grey-arrow.png" /></span><span class="h2">OUR
+        SERVICES</span></h2>
+    <div class="icon-grid md:mx-5">
+      <div class="icon-item">
+        <img src="./assets/seo-icon.png" width="50px" alt="SEO">
+        <p>Search Engine <br> Optimization</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/ppc-icon.png" width="50px" alt="Paid Ads">
+        <p>Pay Per<br> Click</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/web-design-icon.png" width="50px" alt="Mobile">
+        <p>Website<br> Design</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/content-write-icon.png" width="50px" alt="Email">
+        <p>Content<br> Writing</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/website-develop-icon.png" width="50px" alt="Analytics">
+        <p>Website<br> Development</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/email-icon.png" width="50px" alt="Content">
+        <p>Email<br> Marketing</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/ui-ux-icon.png" width="50px" alt="Content">
+        <p>UI / UX</p>
+
+      </div>
+      <div class="icon-item">
+        <img src="./assets/branding-icon.png" width="50px" alt="Content">
+        <p>Branding</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/content-write-icon.png" width="50px" alt="Content">
+        <p>Content<br> Marketing</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/smo-icon.png" width="50px" alt="Content">
+        <p>Social Media<br> Optimization</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/media-icon.png" width="50px" alt="Content">
+        <p>Media<br> Planning Service</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/graphic-design-icon.png" width="50px" alt="Content">
+        <p>Graphic<br> Design</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/linkedin-icon.png" width="50px" alt="Content">
+        <p>LinkedIn<br> Marketing</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/public-rel-icon.png" width="50px" alt="Content">
+        <p>Public<br> Relations</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/smm-icon.png" width="50px" alt="Content">
+        <p>Social Media<br> Marketing</p>
+      </div>
+      <div class="icon-item">
+        <img src="./assets/video-prod-icon.png" width="50px" alt="Content">
+        <p>Video Production<br> & Photoshoots</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center showreel">
+    <h2><span><img src="https://digitactix.com/wp-content/uploads/2019/06/whitarrow-1.png" /></span>
+      <span class="h2 text-white text-center">SHOWREEL</span>
+    </h2>
+    <div class="vid">
+      <video width="600" height="400" controls
+        poster="https://digitactix.com/wp-content/uploads/2021/05/showreel33.jpg">
+        <source src="https://www.digitactix.com/wp-content/uploads/2019/07/SHOWREEL_FINAL.mp4" type="video/mp4">
+      </video>
+    </div>
+    <img src="https://www.digitactix.com/wp-content/uploads/2019/05/showreel-1.png" />
+  </div>
+
+<div class="clients">
+    <h2>
+      <span><img src="https://digitactix.com/wp-content/uploads/2019/05/grey-arrow.png" /></span>
+      <span class="h2">OUR WORK</span>
+    </h2>
+    <div class="container">
+      <ul class="client-grid">
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-7.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-5-1200x1200.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-4.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-3-1200x1200.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-2.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Chew-Central-29-Oct-02-1200x1200.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic-1.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Main-Pic.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/Tuna-London.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/True-Care.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/qube.jpg" alt="" /></li>
+      </ul>
+      <button class="client-btn">EXPLORE MORE</button>
+    </div>
+  </div>
+
+  <div class="team">
+    <div class="container">
+      <div class="teams">
+        <h2><span><img src="https://digitactix.com/wp-content/uploads/2019/05/grey-arrow.png" /></span><span
+            class="h2">OUR TEAM</span></h2>
+
+        <div class="team-content-grid">
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Ankita-Gupta-02.png" />
+            <h3>Ankita Gupta</h3>
+            <h6>Founder & CEO</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/NIvedita-01.png" />
+            <h3>Nivedita Nandi</h3>
+            <h6>Chief Operating Officer</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2021/10/Jigar-Master.png" />
+            <h3>Jigar Master</h3>
+            <h6>Head of SEO and Website</h6>
+          </div>
+
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Ravina-1.png" />
+            <h3>Ravina Deo</h3>
+            <h6>Group Account Head</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2022/11/Amrita.jpg" />
+            <h3>Amrita Singh</h3>
+            <h6>Head of Content</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Jayesh-01.png" />
+            <h3>Jayesh Panchal</h3>
+            <h6>Head of Design and Visualiser</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Jacob-1.png" />
+            <h3>Jacob Aghamkar</h3>
+            <h6>Head of Design & Motion Graphics</h6>
+          </div>
+
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/03/Krati.png" />
+            <h3>Krati Jhingran</h3>
+            <h6>Head of Performance Marketing</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Abishek.png" />
+            <h3>Abhishek Chaudhari</h3>
+            <h6>Account Head</h6>
+          </div>
+
+          <div class="team-content">
+            <img src="https://digitactix.com/wp-content/uploads/2025/02/Drashti-01.png" />
+            <h3>Drashti Vasu </h3>
+            <h6>Account Lead and SM Strategist</h6>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="clients">
+    <h2>
+      <span><img src="https://digitactix.com/wp-content/uploads/2019/05/grey-arrow.png" /></span>
+      <span class="h2">OUR CLIENT</span>
+    </h2>
+    <div class="container">
+      <ul class="logo-grid">
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/06/zeee.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l2.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l3.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l4.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/pinkathon.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Arcon-logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/SBM-Logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/UniversalSompo_LOGO.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Anchor-Logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l10.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/McCoy.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Kidzistaan-Logo-05.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/BookMuService-Logo-02.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Culonary-Craft.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/2020_CD-LOGO_RGB_RED-TEXT.jpg" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l8.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l18.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/Kennys.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Sujan-New-Logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2020/02/all-cargo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l5.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l6.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l7.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l9.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l11.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l12.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l13.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l14.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l15.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l16.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l17.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l19.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2019/05/l20.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/MCI-logo-black-01.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/CBC-group.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/incube-e1739969038474.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/cyber1-e1739969139555.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/huse-logo.webp" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/surgsecure-e1739969203613.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/ReeCoach-Horizontal-e1739970180698.png"
+            alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/gb-rubber-logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/GB-gummi.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/advay-hm-logo-black-tagline.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Ahuja-Logo-Final-01.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/shoolini-uni-e1739970803137.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/taurain.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Petzzco-LOGO-Black-01-e1739971009866.png"
+            alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Schindler-Logo.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Kotak_Mahindra_Group_logo.svg_.png" alt="" />
+        </li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/lodha-adrina.webp" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/rustomjee.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/dell.png" alt="" /></li>
+        <li><img src="https://digitactix.com/wp-content/uploads/2025/02/Blackberry_logo_blue.png" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="container">
+
+      <!-- Section Title -->
+      <h2 class="contact-title">
+        <span><img src="https://digitactix.com/wp-content/uploads/2019/05/grey-arrow.png" /></span>
+        <span class="h2">CONTACT US</span>
+      </h2>
+
+      <!-- Flex Wrapper for Image + Content -->
+      <div class="contact-wrapper">
+        <!-- Left Side (Image) -->
+        <div class="contact-left">
+          <img src="https://www.digitactix.com/wp-content/uploads/2019/05/contact.png" alt="Contact Image">
+        </div>
+
+        <!-- Right Side (Content) -->
+        <div class="contact-right">
+          <ul>
+            <li>To keep up with the latest trends in digital</li>
+            <li>To see glimpses of our work</li>
+            <li>To see what’s up with our chefs</li>
+          </ul>
+          <a href="#your-contact-form" class="contact-btn">Get in Touch</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="testimonial-section testimonials">
+    <h2><span><img src="https://digitactix.com/wp-content/uploads/2019/06/whitarrow-1.png" /></span>
+      <span class="h2 text-white text-center">TESTIMONIALS</span>
+    </h2>
+
+    <div class="owl-carousel testimonial-carousel">
+      <!-- Testimonial Slide 1 -->
+      <div class="testimonial-card">
+        <div class="profile">
+          <img src="./assets/ajit-arti.png" alt="profile">
+          <div class="info">
+            <h3>Aarti Virwani / Ajit Virwani</h3>
+            <p class="role">CEO / FOUNDER - <em>Tuna London</em></p>
+          </div>
+        </div>
+        <p class="message">
+          We are one of India’s leading athleisure brand, being first out there is never easy,
+          we needed more and more people to know about our brand. As our target audience is millennials
+          Social Media was the best way to reach out to them. With campaigns backing our offers in
+          marketplace we've managed to get a good ROI.
+        </p>
+      </div>
+      <!-- Testimonial Slide 2 -->
+      <div class="testimonial-card">
+        <div class="profile">
+          <img src="./assets/anuj.png" alt="profile">
+          <div class="info">
+            <h3>ANUJ GUPTA</h3>
+            <p class="role">CEO - <em>Hitachi Systems Micro Clinic</em></p>
+          </div>
+        </div>
+        <p class="message">
+          The success of Intel Security White Paper Download is purely because of the professionals at Digitactix. We
+          received 70,000+ Engagement & more than 1000 white paper downloads & great credibility for the brand, Thanks
+          to Ankita and her team.
+        </p>
+      </div>
+      <!-- Testimonial Slide 3 -->
+      <div class="testimonial-card">
+        <div class="profile">
+          <img src="./assets/zubin.png" alt="profile">
+          <div class="info">
+            <h3>Dr Zubin Pardawala</h3>
+            <p class="role">DIRECTOR - <em>True care education</em></p>
+          </div>
+        </div>
+        <p class="message">
+          For #LifePostCancer campaign, Digitactix managed to arrange a corporate cricket tournament to support the
+          cause of preparing Cancer survivor to make a living. The campaign got our engagement rate up by 55% with a
+          good 93% rise in the number of people who viewed our video and a decent amount of sponsorship to support our
+          initiative. Appreciate the effort.
+        </p>
+      </div>
+      <!-- Testimonial Slide 4 -->
+      <div class="testimonial-card">
+        <div class="profile">
+          <img src="./assets/sunil-pinky.png" alt="profile">
+          <div class="info">
+            <h3>Vidhi Punjabi / Sunil Punjabi Ceo</h3>
+            <p class="role">FOUNDER - <em>Kraus Jeans</em></p>
+          </div>
+        </div>
+        <p class="message">
+          After Digitactix got on board our brand awareness has shot up by 960%, engagement by 2000% and clicks by
+          almost by 300%. Our campaigns around Vani Kapoor and #FindYourFit has been quite an eye ball grabber. We are
+          looking forward to take these numbers to next level. Good job Team Digitactix.
+        </p>
+      </div>
+      <!-- Testimonial Slide 5 -->
+      <div class="testimonial-card">
+        <div class="profile">
+          <img src="./assets/mustafa.png" alt="profile">
+          <div class="info">
+            <h3>Mustafa Merchant</h3>
+            <p class="role">DIRECTOR - <em>Furniture Kraft</em></p>
+          </div>
+        </div>
+        <p class="message">
+          Been in the furniture business since decades, but taking it online is a different ball game. Our teams worked
+          together with Digitactix on getting the detailing right, in terms of visuals and user experience. We are happy
+          with the experience and look forward to our digital journey with this young and dynamic team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="about-bottom">
+    <div class="container">
+      <div class="ab">
+        <h2 style="text-align:center;">Powering Brands with Smart Digital Solutions</h2>
+
+        <p
+          style="text-align: center;color: #666;font-size: 18px;font-weight: 300;line-height: 30px;margin-bottom: 10px;margin-top: 20px">
+          Digital Marketing today is about strategy, execution, and impact.</p>
+        <p
+          style="text-align: center;color: #666;font-size: 18px;font-weight: 300;line-height: 30px;margin-bottom: 10px">
+          At Digitactix, we bring all three together to create digital success stories. Our work spans multiple
+          industries, helping brands establish a powerful online presence. Whether it’s paid media, search marketing, or
+          social growth, we execute with precision and deliver results. Over the years, we have built a reputation for
+          driving measurable growth for our clients.</p>
+        <p
+          style="text-align: center;color: #666;font-size: 18px;font-weight: 300;line-height: 30px;margin-bottom: 10px">
+          To see how we make it happen, check out our company deck for a closer look at our expertise, approach, and
+          success stories.</p>
+        <div id="click1" class="butt" style="text-align: center"><button id="more1"
+            style="padding: 15px;border-radius: 5px"> <a style="color: #ffffff"
+              href="https://digitactix.com/wp-content/uploads/2025/03/Digitactix-Deck-2025-1.pdf" target="_blank"
+              rel="noopener"> <i class="fa fa-download"></i> Get the Brand Deck</a></button></div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Footer Section -->
   <footer class="footer text-light">
@@ -160,7 +656,8 @@
       <!-- Footer Bottom -->
       <div class="container">
         <div class="text-center">
-          <p class="mb-1">Digitactix is a digital marketing agency focused on bringing growth and revenue to its client.
+          <p class="mb-1">Digitactix is a digital marketing agency focused on bringing growth and revenue to its
+            client.
             We provide essential services like Social Media Marketing, SEO, Pay Per Click, Web Design and Development,
             Content Writing and many more while keeping our motto in mind: When your client makes business, you make
             business.</p>
@@ -170,8 +667,70 @@
     </div>
   </footer>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    function toggleContent() {
+      var moreContent = document.getElementById("moreContent");
+      var btn = document.getElementById("toggleBtn");
+
+      if (moreContent.style.display === "none") {
+        moreContent.style.display = "block";
+        btn.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        btn.textContent = "Read More";
+      }
+    }
+  </script>
+
+  <!-- CountUp -->
+  <script>
+    function animateCounter(el, target, duration = 2000) {
+      const start = 0;
+      const startTime = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(progress * (target - start) + start);
+
+        el.textContent = value + '+';
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    window.onload = function () {
+      const counters = document.querySelectorAll('.counter-number');
+      counters.forEach(el => {
+        const target = parseInt(el.getAttribute('data-target'), 10);
+        animateCounter(el, target);
+      });
+    };
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".testimonial-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true
+      });
+    });
+  </script>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
